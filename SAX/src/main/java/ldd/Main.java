@@ -12,7 +12,8 @@ public class Main {
             File inputFile = new File("bibliography.xml");
             // Template handler = new Template();
             // Q9a handler = new Q9a();
-            Q9b handler = new Q9b();
+            // Q9b handler = new Q9b();
+            Q9c handler = new Q9c();
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             saxParser.parse(inputFile, handler);
