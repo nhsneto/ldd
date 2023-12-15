@@ -13,7 +13,8 @@ public class Main {
             // Template handler = new Template();
             // Q9a handler = new Q9a();
             // Q9b handler = new Q9b();
-            Q9c handler = new Q9c();
+            // Q9c handler = new Q9c();
+            Q9d handler = new Q9d();
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             saxParser.parse(inputFile, handler);
