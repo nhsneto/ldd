@@ -9,13 +9,14 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-public class Template {
+public class Q9d {
 
     public static void main(String[] args) throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -24,9 +25,13 @@ public class Template {
 
         XPathFactory xpathFactory = XPathFactory.newInstance();
         XPath xpath = xpathFactory.newXPath();
-        XPathExpression expr = xpath.compile("");
+        XPathExpression expr = xpath.compile("count(//book[year >= 2010 and price > 150])");
 
         Document out = db.newDocument();
+        Element root = out.createElement("result");
+        String count = (String) expr.evaluate(doc, XPathConstants.STRING);
+        root.setTextContent(count);
+        out.appendChild(root);
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
