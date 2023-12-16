@@ -2,9 +2,8 @@ package ldd;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import javax.xml.stream.XMLOutputFactory;
@@ -19,11 +18,11 @@ public class Q9l extends DefaultHandler {
 
     private XMLStreamWriter writer;
     private boolean isAuthor;
-    private HashMap<String, Set<String>> authorsByFirstLetter;
+    private TreeMap<String, TreeSet<String>> authorsByFirstLetter;
 
     public Q9l() throws IOException, XMLStreamException {
         writer = XMLOutputFactory.newFactory().createXMLStreamWriter(new FileOutputStream("result.xml"), "UTF-8");
-        authorsByFirstLetter = new HashMap<>();
+        authorsByFirstLetter = new TreeMap<>();
     }
 
     @Override
@@ -39,10 +38,8 @@ public class Q9l extends DefaultHandler {
     @Override
     public void endDocument() throws SAXException {
         try {
-            TreeSet<String> letters = new TreeSet<>(authorsByFirstLetter.keySet());
-
-            for (String letter : letters) {
-                TreeSet<String> authors = new TreeSet<>(authorsByFirstLetter.get(letter));
+            for (String letter : authorsByFirstLetter.keySet()) {
+                Set<String> authors = authorsByFirstLetter.get(letter);
                 writer.writeStartElement("authors");
                 writer.writeAttribute("letter", letter);
                 writer.writeAttribute("count", Integer.toString(authors.size()));
@@ -83,7 +80,7 @@ public class Q9l extends DefaultHandler {
                 Set<String> authors = authorsByFirstLetter.get(firstLetter);
                 authors.add(author);
             } else {
-                HashSet<String> authors = new HashSet<>();
+                TreeSet<String> authors = new TreeSet<>();
                 authors.add(author);
                 authorsByFirstLetter.put(firstLetter, authors);
             }

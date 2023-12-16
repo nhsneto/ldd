@@ -1,8 +1,8 @@
 package ldd;
 
 import java.io.File;
-import java.util.HashMap;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -23,7 +23,7 @@ public class Q9l {
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(new File("bibliography.xml"));
 
-        HashMap<String, TreeSet<String>> authorsByFirstLetter = new HashMap<>();
+        TreeMap<String, TreeSet<String>> authorsByFirstLetter = new TreeMap<>();
         NodeList authorNodeList = doc.getElementsByTagName("author");
         for (int i = 0; i < authorNodeList.getLength(); i++) {
             String author = authorNodeList.item(i).getTextContent();
@@ -41,8 +41,7 @@ public class Q9l {
 
         Document out = db.newDocument();
         Element root = out.createElement("result");
-        Set<String> letters = new TreeSet<>(authorsByFirstLetter.keySet());
-        for (String letter : letters) {
+        for (String letter : authorsByFirstLetter.keySet()) {
             Set<String> authors = authorsByFirstLetter.get(letter);
             Element authorsElement = out.createElement("authors");
 
