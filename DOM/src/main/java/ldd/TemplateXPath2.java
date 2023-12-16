@@ -32,6 +32,8 @@ public class TemplateXPath2 {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document out = db.newDocument();
+        Element root = out.createElement("result");
+        out.appendChild(root);
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();

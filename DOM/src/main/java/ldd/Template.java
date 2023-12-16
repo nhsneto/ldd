@@ -27,6 +27,8 @@ public class Template {
         XPathExpression expr = xpath.compile("");
 
         Document out = db.newDocument();
+        Element root = out.createElement("result");
+        out.appendChild(root);
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
