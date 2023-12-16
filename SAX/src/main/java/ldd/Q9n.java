@@ -3,6 +3,7 @@ package ldd;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.NavigableSet;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -40,9 +41,9 @@ public class Q9n extends DefaultHandler {
     @Override
     public void endDocument() throws SAXException {
         try {
-            TreeSet<Integer> years = new TreeSet<>(booksByYear.keySet());
+            NavigableSet<Integer> yearsInDescendingOrder = new TreeSet<>(booksByYear.keySet()).descendingSet();
 
-            for (int year : years.descendingSet()) {
+            for (int year : yearsInDescendingOrder) {
                 Set<String> titles = booksByYear.get(year);
                 writer.writeStartElement("books");
                 writer.writeAttribute("year", Integer.toString(year));
