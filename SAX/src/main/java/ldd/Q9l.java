@@ -36,6 +36,31 @@ public class Q9l extends DefaultHandler {
     }
 
     @Override
+    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+        if (qName.equals("author")) {
+            isAuthor = true;
+        }
+    }
+
+    @Override
+    public void characters(char[] ch, int start, int length) throws SAXException {
+        if (isAuthor) {
+            String author = new String(ch, start, length);
+            String firstLetter = author.substring(0, 1);
+
+            if (authorsByFirstLetter.containsKey(firstLetter)) {
+                Set<String> authors = authorsByFirstLetter.get(firstLetter);
+                authors.add(author);
+            } else {
+                Set<String> authors = new TreeSet<>();
+                authors.add(author);
+                authorsByFirstLetter.put(firstLetter, authors);
+            }
+            isAuthor = false;
+        }
+    }
+
+    @Override
     public void endDocument() throws SAXException {
         try {
             for (String letter : authorsByFirstLetter.keySet()) {
@@ -55,36 +80,6 @@ public class Q9l extends DefaultHandler {
             writer.close();
         } catch (XMLStreamException e) {
             e.printStackTrace();
-        }
-    }
-
-    @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if (qName.equals("author")) {
-            isAuthor = true;
-        }
-    }
-
-    @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        
-    }
-
-    @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-        if (isAuthor) {
-            String author = new String(ch, start, length);
-            String firstLetter = author.substring(0, 1);
-
-            if (authorsByFirstLetter.containsKey(firstLetter)) {
-                Set<String> authors = authorsByFirstLetter.get(firstLetter);
-                authors.add(author);
-            } else {
-                Set<String> authors = new TreeSet<>();
-                authors.add(author);
-                authorsByFirstLetter.put(firstLetter, authors);
-            }
-            isAuthor = false;
         }
     }
 }

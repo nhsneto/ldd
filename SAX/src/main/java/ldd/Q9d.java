@@ -35,22 +35,22 @@ public class Q9d extends DefaultHandler {
     }
 
     @Override
-    public void endDocument() throws SAXException {
-        try {
-            writer.writeCharacters(Integer.toString(bookCount));
-            writer.writeEndDocument();
-            writer.close();
-        } catch (XMLStreamException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("year")) {
             isYear = true;
         } else if (qName.equals("price")) {
             isPrice = true;
+        }
+    }
+
+    @Override
+    public void characters(char[] ch, int start, int length) throws SAXException {
+        if (isYear) {
+            year = Integer.parseInt(new String(ch, start, length));
+            isYear = false;
+        } else if (isPrice) {
+            price = Double.parseDouble(new String(ch, start, length));
+            isPrice = false;
         }
     }
 
@@ -64,13 +64,13 @@ public class Q9d extends DefaultHandler {
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-        if (isYear) {
-            year = Integer.parseInt(new String(ch, start, length));
-            isYear = false;
-        } else if (isPrice) {
-            price = Double.parseDouble(new String(ch, start, length));
-            isPrice = false;
+    public void endDocument() throws SAXException {
+        try {
+            writer.writeCharacters(Integer.toString(bookCount));
+            writer.writeEndDocument();
+            writer.close();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
         }
     }
 }

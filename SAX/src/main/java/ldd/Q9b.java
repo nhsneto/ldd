@@ -32,17 +32,6 @@ public class Q9b extends DefaultHandler {
     }
 
     @Override
-    public void endDocument() throws SAXException {
-        try {
-            writer.writeCharacters(Integer.toString(bookCount));
-            writer.writeEndDocument();
-            writer.close();
-        } catch (XMLStreamException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("author")) {
             authorCount++;
@@ -60,7 +49,13 @@ public class Q9b extends DefaultHandler {
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-        
+    public void endDocument() throws SAXException {
+        try {
+            writer.writeCharacters(Integer.toString(bookCount));
+            writer.writeEndDocument();
+            writer.close();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
+        }
     }
 }

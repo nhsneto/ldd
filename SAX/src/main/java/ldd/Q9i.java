@@ -38,17 +38,6 @@ public class Q9i extends DefaultHandler {
     }
 
     @Override
-    public void endDocument() throws SAXException {
-        try {
-            writer.writeCharacters(Boolean.toString((sumOfPricesPortuguese / portugueseCount) > (sumOfPricesEnglish / englishCount)));
-            writer.writeEndDocument();
-            writer.close();
-        } catch (XMLStreamException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("title") && attributes.getValue("lang").equals("pt-br")) {
             isBookInPortuguese = true;
@@ -70,6 +59,17 @@ public class Q9i extends DefaultHandler {
     }
 
     @Override
+    public void characters(char[] ch, int start, int length) throws SAXException {
+        if (isPortuguesePrice) {
+            sumOfPricesPortuguese += Double.parseDouble(new String(ch, start, length));
+            isPortuguesePrice = false;
+        } else if (isEnglishPrice) {
+            sumOfPricesEnglish += Double.parseDouble(new String(ch, start, length));
+            isEnglishPrice = false;
+        }
+    }
+
+    @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
         if (qName.equals("book")) {
             isBookInPortuguese = false;
@@ -78,13 +78,13 @@ public class Q9i extends DefaultHandler {
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-        if (isPortuguesePrice) {
-            sumOfPricesPortuguese += Double.parseDouble(new String(ch, start, length));
-            isPortuguesePrice = false;
-        } else if (isEnglishPrice) {
-            sumOfPricesEnglish += Double.parseDouble(new String(ch, start, length));
-            isEnglishPrice = false;
+    public void endDocument() throws SAXException {
+        try {
+            writer.writeCharacters(Boolean.toString((sumOfPricesPortuguese / portugueseCount) > (sumOfPricesEnglish / englishCount)));
+            writer.writeEndDocument();
+            writer.close();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -33,21 +33,19 @@ public class Q9a extends DefaultHandler {
     }
 
     @Override
-    public void endDocument() throws SAXException {
-        try {
-            writer.writeEndDocument();
-            writer.close();
-        } catch (XMLStreamException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("title")) {
             isTitle = true;
         } else if (qName.equals("author")) {
             authorCount++;
+        }
+    }
+
+    @Override
+    public void characters(char[] ch, int start, int length) throws SAXException {
+        if (isTitle) {
+            title = new String(ch, start, length);
+            isTitle = false;
         }
     }
 
@@ -68,10 +66,12 @@ public class Q9a extends DefaultHandler {
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-        if (isTitle) {
-            title = new String(ch, start, length);
-            isTitle = false;
+    public void endDocument() throws SAXException {
+        try {
+            writer.writeEndDocument();
+            writer.close();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
         }
     }
 }

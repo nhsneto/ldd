@@ -39,42 +39,12 @@ public class Q9n extends DefaultHandler {
     }
 
     @Override
-    public void endDocument() throws SAXException {
-        try {
-            NavigableSet<Integer> yearsInDescendingOrder = new TreeSet<>(booksByYear.keySet()).descendingSet();
-
-            for (int year : yearsInDescendingOrder) {
-                Set<String> titles = booksByYear.get(year);
-                writer.writeStartElement("books");
-                writer.writeAttribute("year", Integer.toString(year));
-                writer.writeAttribute("count", Integer.toString(titles.size()));
-                for (String title: titles) {
-                    writer.writeStartElement("title");
-                    writer.writeCharacters(title);
-                    writer.writeEndElement();
-                }
-                writer.writeEndElement();
-            }
-
-            writer.writeEndDocument();
-            writer.close();
-        } catch (XMLStreamException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("title")) {
             isTitle = true;
         } else if (qName.equals("year")) {
             isYear = true;
         }
-    }
-
-    @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        
     }
 
     @Override
@@ -95,6 +65,31 @@ public class Q9n extends DefaultHandler {
                 booksByYear.put(year, titles);
             }
             isYear = false;
+        }
+    }
+
+    @Override
+    public void endDocument() throws SAXException {
+        try {
+            NavigableSet<Integer> years = new TreeSet<>(booksByYear.keySet()).descendingSet();
+
+            for (int year : years) {
+                Set<String> titles = booksByYear.get(year);
+                writer.writeStartElement("books");
+                writer.writeAttribute("year", Integer.toString(year));
+                writer.writeAttribute("count", Integer.toString(titles.size()));
+                for (String title: titles) {
+                    writer.writeStartElement("title");
+                    writer.writeCharacters(title);
+                    writer.writeEndElement();
+                }
+                writer.writeEndElement();
+            }
+
+            writer.writeEndDocument();
+            writer.close();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
         }
     }
 }

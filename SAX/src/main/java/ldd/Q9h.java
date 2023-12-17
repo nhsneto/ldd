@@ -31,25 +31,10 @@ public class Q9h extends DefaultHandler {
     }
 
     @Override
-    public void endDocument() throws SAXException {
-        try {
-            writer.writeEndDocument();
-            writer.close();
-        } catch (XMLStreamException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("title") && attributes.getValue("lang").equals("pt-br")) {
             isBookInPortuguese = true;
         }
-    }
-
-    @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        
     }
 
     @Override
@@ -63,6 +48,16 @@ public class Q9h extends DefaultHandler {
                 e.printStackTrace();
             }
             isBookInPortuguese = false;
+        }
+    }
+
+    @Override
+    public void endDocument() throws SAXException {
+        try {
+            writer.writeEndDocument();
+            writer.close();
+        } catch (XMLStreamException e) {
+            e.printStackTrace();
         }
     }
 }

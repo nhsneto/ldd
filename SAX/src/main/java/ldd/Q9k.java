@@ -36,6 +36,27 @@ public class Q9k extends DefaultHandler {
     }
 
     @Override
+    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+        if (qName.equals("author")) {
+            isAuthor = true;
+        }
+    }
+
+    @Override
+    public void characters(char[] ch, int start, int length) throws SAXException {
+        if (isAuthor) {
+            String author = new String(ch, start, length);
+            if (authors.containsKey(author)) {
+                Integer count = authors.get(author);
+                authors.put(author, ++count);
+            } else {
+                authors.put(author, 1);
+            }
+            isAuthor = false;
+        }
+    }
+
+    @Override
     public void endDocument() throws SAXException {
         try {
             int maxValue = Collections.max(authors.values());
@@ -50,32 +71,6 @@ public class Q9k extends DefaultHandler {
             writer.close();
         } catch (XMLStreamException e) {
             e.printStackTrace();
-        }
-    }
-
-    @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if (qName.equals("author")) {
-            isAuthor = true;
-        }
-    }
-
-    @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        
-    }
-
-    @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
-        if (isAuthor) {
-            String author = new String(ch, start, length);
-            if (authors.containsKey(author)) {
-                Integer count = authors.get(author);
-                authors.put(author, ++count);
-            } else {
-                authors.put(author, 1);
-            }
-            isAuthor = false;
         }
     }
 }
