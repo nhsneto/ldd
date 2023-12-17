@@ -18,7 +18,7 @@ public class Q9l extends DefaultHandler {
 
     private XMLStreamWriter writer;
     private boolean isAuthor;
-    private TreeMap<String, TreeSet<String>> authorsByFirstLetter;
+    private TreeMap<String, Set<String>> authorsByFirstLetter;
 
     public Q9l() throws IOException, XMLStreamException {
         writer = XMLOutputFactory.newFactory().createXMLStreamWriter(new FileOutputStream("result.xml"), "UTF-8");
@@ -80,7 +80,7 @@ public class Q9l extends DefaultHandler {
                 Set<String> authors = authorsByFirstLetter.get(firstLetter);
                 authors.add(author);
             } else {
-                TreeSet<String> authors = new TreeSet<>();
+                Set<String> authors = new TreeSet<>();
                 authors.add(author);
                 authorsByFirstLetter.put(firstLetter, authors);
             }

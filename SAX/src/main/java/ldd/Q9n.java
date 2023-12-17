@@ -21,7 +21,7 @@ public class Q9n extends DefaultHandler {
     private boolean isYear;
     private boolean isTitle;
     private String title;
-    private HashMap<Integer, TreeSet<String>> booksByYear;
+    private HashMap<Integer, Set<String>> booksByYear;
 
     public Q9n() throws IOException, XMLStreamException {
         writer = XMLOutputFactory.newFactory().createXMLStreamWriter(new FileOutputStream("result.xml"), "UTF-8");
@@ -90,7 +90,7 @@ public class Q9n extends DefaultHandler {
                 Set<String> titles = booksByYear.get(year);
                 titles.add(title);
             } else {
-                TreeSet<String> titles = new TreeSet<>();
+                Set<String> titles = new TreeSet<>();
                 titles.add(title);
                 booksByYear.put(year, titles);
             }

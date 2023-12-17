@@ -23,17 +23,17 @@ public class Q9l {
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(new File("bibliography.xml"));
 
-        TreeMap<String, TreeSet<String>> authorsByFirstLetter = new TreeMap<>();
+        TreeMap<String, Set<String>> authorsByFirstLetter = new TreeMap<>();
         NodeList authorNodeList = doc.getElementsByTagName("author");
         for (int i = 0; i < authorNodeList.getLength(); i++) {
             String author = authorNodeList.item(i).getTextContent();
             String firstLetter = author.substring(0, 1);
             
             if (authorsByFirstLetter.containsKey(firstLetter)) {
-                TreeSet<String> authors = authorsByFirstLetter.get(firstLetter);
+                Set<String> authors = authorsByFirstLetter.get(firstLetter);
                 authors.add(author);
             } else {
-                TreeSet<String> authors = new TreeSet<>();
+                Set<String> authors = new TreeSet<>();
                 authors.add(author);
                 authorsByFirstLetter.put(firstLetter, authors);
             }
