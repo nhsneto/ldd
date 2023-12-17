@@ -44,7 +44,6 @@ public class Q9n {
             if (booksByYear.containsKey(year)) {
                 Set<String> titles = booksByYear.get(year);
                 titles.add(title);
-                booksByYear.put(year, titles);
             } else {
                 Set<String> titles = new TreeSet<>();
                 titles.add(title);
