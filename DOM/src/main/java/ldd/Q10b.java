@@ -25,6 +25,7 @@ public class Q10b {
         Processor processor = new Processor(false);
         net.sf.saxon.s9api.DocumentBuilder dbu = processor.newDocumentBuilder();
         XdmNode node = dbu.build(new File("cd_catalog.xml"));
+
         XPathCompiler xpath2 = processor.newXPathCompiler();
         XPathExecutable exec = xpath2.compile("/catalog/cd[year = min(//year)]/title");
         XPathSelector selector = exec.load();

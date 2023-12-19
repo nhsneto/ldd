@@ -26,6 +26,7 @@ public class Q9c {
         Processor processor = new Processor(false);
         net.sf.saxon.s9api.DocumentBuilder dbu = processor.newDocumentBuilder();
         XdmNode node = dbu.build(new File("bibliography.xml"));
+
         XPathCompiler xpath2 = processor.newXPathCompiler();
         XPathExecutable exec = xpath2.compile("avg(//book[@category = 'SO']/price)");
         XPathSelector selector = exec.load();

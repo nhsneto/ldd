@@ -26,6 +26,7 @@ public class Q9f {
         Processor processor = new Processor(false);
         net.sf.saxon.s9api.DocumentBuilder dbu = processor.newDocumentBuilder();
         XdmNode node = dbu.build(new File("bibliography.xml"));
+
         XPathCompiler xpath2 = processor.newXPathCompiler();
         XPathExecutable exec = xpath2.compile("count(distinct-values(//author[starts-with(text(), 'A')]))");
         XPathSelector selector = exec.load();

@@ -25,6 +25,7 @@ public class Q10a {
         Processor processor = new Processor(false);
         net.sf.saxon.s9api.DocumentBuilder dbu = processor.newDocumentBuilder();
         XdmNode node = dbu.build(new File("cd_catalog.xml"));
+
         XPathCompiler xpath2 = processor.newXPathCompiler();
         XPathExecutable exec = xpath2.compile("avg(/catalog/cd/price)");
         XPathSelector selector = exec.load();
