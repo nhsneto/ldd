@@ -17,7 +17,6 @@ import net.sf.saxon.s9api.XPathCompiler;
 import net.sf.saxon.s9api.XPathExecutable;
 import net.sf.saxon.s9api.XPathSelector;
 import net.sf.saxon.s9api.XdmNode;
-import net.sf.saxon.s9api.XdmValue;
 
 public class Q10b {
 
@@ -29,13 +28,12 @@ public class Q10b {
         XPathExecutable exec = xpath2.compile("/catalog/cd[year = min(//year)]/title");
         XPathSelector selector = exec.load();
         selector.setContextItem(node);
-        XdmValue xpathResult = selector.evaluate();
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document out = db.newDocument();
         Element root = out.createElement("result");
-        xpathResult.forEach(item -> {
+        selector.forEach(item -> {
             Element title = out.createElement("title");
             title.setTextContent(item.getStringValue());
             root.appendChild(title);
