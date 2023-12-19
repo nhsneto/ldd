@@ -27,21 +27,15 @@ public class Q9i {
         XdmNode node = dbu.build(new File("bibliography.xml"));
         XPathCompiler xpath2 = processor.newXPathCompiler();
 
-        XPathExecutable exec = xpath2.compile("avg(//book[title[@lang = 'pt-br']]/price)");
+        XPathExecutable exec = xpath2.compile("avg(//book[title[@lang = 'pt-br']]/price) > avg(//book[title[@lang = 'en']]/price)");
         XPathSelector selector = exec.load();
         selector.setContextItem(node);
-        Double averagePortuguese = Double.parseDouble(selector.evaluate().toString());
-
-        exec = xpath2.compile("avg(//book[title[@lang = 'en']]/price)");
-        selector = exec.load();
-        selector.setContextItem(node);
-        Double averageEnglish = Double.parseDouble(selector.evaluate().toString());
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document out = db.newDocument();
         Element root = out.createElement("result");
-        root.setTextContent(Boolean.toString(averagePortuguese > averageEnglish));
+        root.setTextContent(selector.evaluateSingle().getStringValue());
         out.appendChild(root);
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
