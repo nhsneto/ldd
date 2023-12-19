@@ -22,16 +22,17 @@ import net.sf.saxon.s9api.XdmNode;
 public class TemplateXPath2 {
 
     public static void main(String[] args) throws Exception {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+        Document doc = db.parse(new File("cd_catalog.xml"));
         Processor processor = new Processor(false);
-        net.sf.saxon.s9api.DocumentBuilder dbu = processor.newDocumentBuilder();
-        XdmNode node = dbu.build(new File("cd_catalog.xml"));
+        XdmNode node = processor.newDocumentBuilder().wrap(doc);
+
         XPathCompiler xpath2 = processor.newXPathCompiler();
         XPathExecutable exec = xpath2.compile("");
         XPathSelector selector = exec.load();
         selector.setContextItem(node);
 
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        DocumentBuilder db = dbf.newDocumentBuilder();
         Document out = db.newDocument();
         Element root = out.createElement("result");
         out.appendChild(root);
