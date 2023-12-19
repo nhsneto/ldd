@@ -18,14 +18,14 @@ import net.sf.saxon.s9api.XPathExecutable;
 import net.sf.saxon.s9api.XPathSelector;
 import net.sf.saxon.s9api.XdmNode;
 
-public class TemplateXPath2 {
+public class Q10a {
 
     public static void main(String[] args) throws Exception {
         Processor processor = new Processor(false);
         net.sf.saxon.s9api.DocumentBuilder dbu = processor.newDocumentBuilder();
         XdmNode node = dbu.build(new File("cd_catalog.xml"));
         XPathCompiler xpath2 = processor.newXPathCompiler();
-        XPathExecutable exec = xpath2.compile("");
+        XPathExecutable exec = xpath2.compile("avg(/catalog/cd/price)");
         XPathSelector selector = exec.load();
         selector.setContextItem(node);
 
@@ -33,6 +33,8 @@ public class TemplateXPath2 {
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document out = db.newDocument();
         Element root = out.createElement("result");
+        Double average = Double.parseDouble(selector.evaluateSingle().getStringValue());
+        root.setTextContent(String.format("%.2f", average));
         out.appendChild(root);
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
