@@ -41,50 +41,10 @@ public class Q10c {
 
         Document out = db.newDocument();
         Element root = out.createElement("result");
-
         NodeList cdNodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
         for (int i = 0; i < cdNodeList.getLength(); i++) {
-            NodeList cdChildren = cdNodeList.item(i).getChildNodes();
-            Element cd = out.createElement("cd");
-
-            for (int j = 0; j < cdChildren.getLength(); j++) {
-                Node child = cdChildren.item(j);
-
-                switch (child.getNodeName()) {
-                    case "title":
-                        Element title = out.createElement("title");
-                        title.setTextContent(child.getTextContent());
-                        cd.appendChild(title);
-                        break;
-                    case "artist":
-                        Element artist = out.createElement("artist");
-                        artist.setTextContent(child.getTextContent());
-                        cd.appendChild(artist);
-                        break;
-                    case "country":
-                        Element country = out.createElement("country");
-                        country.setTextContent(child.getTextContent());
-                        cd.appendChild(country);
-                        break;
-                    case "company":
-                        Element company = out.createElement("company");
-                        company.setTextContent(child.getTextContent());
-                        cd.appendChild(company);
-                        break;
-                    case "price":
-                        Element price = out.createElement("price");
-                        price.setTextContent(child.getTextContent());
-                        cd.appendChild(price);
-                        break;
-                    case "year":
-                        Element year = out.createElement("year");
-                        year.setTextContent(child.getTextContent());
-                        cd.appendChild(year);
-                        break;
-                }
-            }
-
-            root.appendChild(cd);
+            Node cd = cdNodeList.item(i);
+            root.appendChild(out.importNode(cd, true));
         }
         out.appendChild(root);
 
