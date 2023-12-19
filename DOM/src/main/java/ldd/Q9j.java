@@ -4,6 +4,7 @@ import java.io.File;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
@@ -37,6 +38,7 @@ public class Q9j {
         Transformer transformer = transformerFactory.newTransformer();
         DOMSource source = new DOMSource(out);
         StreamResult result = new StreamResult(new File("result.xml"));
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
         transformer.transform(source, result);
     }
 }
