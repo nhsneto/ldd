@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            File inputFile = new File("bibliography.xml");
+            File inputFile = new File("chalmers-biography-extract.xml");
             // Template handler = new Template();
             // Q9a handler = new Q9a();
             // Q9b handler = new Q9b();
@@ -24,7 +24,8 @@ public class Main {
             // Q9k handler = new Q9k();
             // Q9l handler = new Q9l();
             // Q9m handler = new Q9m();
-            Q9n handler = new Q9n();
+            // Q9n handler = new Q9n();
+            Q11a handler = new Q11a();
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             saxParser.parse(inputFile, handler);
