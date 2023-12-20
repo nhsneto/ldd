@@ -26,7 +26,8 @@ public class Main {
             // Q9m handler = new Q9m();
             // Q9n handler = new Q9n();
             // Q11a handler = new Q11a();
-            Q11b handler = new Q11b();
+            // Q11b handler = new Q11b();
+            Q11c handler = new Q11c();
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
             saxParser.parse(inputFile, handler);
