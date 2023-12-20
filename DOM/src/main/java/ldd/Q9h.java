@@ -32,7 +32,6 @@ public class Q9h {
         Document out = db.newDocument();
         Element root = out.createElement("result");
         NodeList titles = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
-
         for (int i = 0; i < titles.getLength(); i++) {
             Element author = out.createElement("author");
             author.setTextContent(titles.item(i).getTextContent());
