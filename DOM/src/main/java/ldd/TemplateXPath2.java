@@ -24,7 +24,7 @@ public class TemplateXPath2 {
     public static void main(String[] args) throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-        Document doc = db.parse(new File("cd_catalog.xml"));
+        Document doc = db.parse(new File("chalmers-biography-extract.xml"));
         Processor processor = new Processor(false);
         XdmNode node = processor.newDocumentBuilder().wrap(doc);
 

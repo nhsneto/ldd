@@ -13,13 +13,14 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import net.sf.saxon.s9api.DOMDestination;
 import net.sf.saxon.s9api.Processor;
 import net.sf.saxon.s9api.XQueryCompiler;
 import net.sf.saxon.s9api.XQueryEvaluator;
 import net.sf.saxon.s9api.XQueryExecutable;
 import net.sf.saxon.s9api.XdmNode;
 
-public class TemplateXQuery {
+public class Q11a {
 
     public static void main(String[] args) throws Exception {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -29,12 +30,16 @@ public class TemplateXQuery {
         XdmNode node = processor.newDocumentBuilder().wrap(doc);
 
         XQueryCompiler xquery = processor.newXQueryCompiler();
-        XQueryExecutable exec = xquery.compile("");
+        String query = "for $e in //entry[@died < 1600] " +
+                       "order by xs:integer($e/@died) " +
+                       "return <dude>{normalize-space($e/title/string()) || ' (' || $e/@died || ')'}</dude>";
+        XQueryExecutable exec = xquery.compile(query);
         XQueryEvaluator evaluator = exec.load();
         evaluator.setContextItem(node);
 
         Document out = db.newDocument();
-        Element root = out.createElement("result");
+        Element root = out.createElement("results");
+        evaluator.run(new DOMDestination(root));
         out.appendChild(root);
 
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
