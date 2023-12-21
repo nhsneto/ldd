@@ -1,7 +1,7 @@
 package ldd;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLOutputFactory;
@@ -14,7 +14,7 @@ public class Template {
     public static void main(String[] args) throws Exception {
         XMLInputFactory xmlif = XMLInputFactory.newFactory();
         XMLOutputFactory xmlof = XMLOutputFactory.newFactory();
-        XMLStreamReader reader = xmlif.createXMLStreamReader(new FileReader("cd_catalog.xml"));
+        XMLStreamReader reader = xmlif.createXMLStreamReader(new FileInputStream("futebol.xml"), "UTF-8");
         XMLStreamWriter writer = xmlof.createXMLStreamWriter(new FileOutputStream("result.xml"), "UTF-8");
 
         writer.writeStartDocument("UTF-8", "1.0");
