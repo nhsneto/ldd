@@ -1,0 +1,462 @@
+<albums>
+    <album year="1967" type="studio">
+        <title>Domingo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gal Costa</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1968" type="studio">
+        <title>Caetano Veloso</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1968" type="studio">
+        <title>Tropicalia ou Panis et Circencis</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+            <author>Gal Costa</author>
+            <author>Nara Leão</author>
+            <author>Tom Zé</author>
+            <author>Os Mutantes</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1969" type="studio">
+        <title>Caetano Veloso</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1971" type="studio">
+        <title>Caetano Veloso</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1972" type="studio">
+        <title>Transa</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1972" type="live">
+        <title>Barra 69</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+            <company>Phonogram</company>
+        </companies>
+    </album>
+    <album year="1972" type="live">
+        <title>Caetano e Chico Juntos e Ao Vivo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Chico Buarque</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+            <company>Phonogram</company>
+        </companies>
+    </album>
+    <album year="1973" type="studio">
+        <title>Araçá Azul</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1974" type="live">
+        <title>Temporada de Verão</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+            <author>Gal Costa</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+            <company>Phonogram</company>
+        </companies>
+    </album>
+    <album year="1975" type="studio">
+        <title>Jóia</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1975" type="studio">
+        <title>Qualquer Coisa</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1976" type="live">
+        <title>Doces Bárbaros</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+            <author>Gal Costa</author>
+            <author>Maria Bethânia</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+            <company>Phonogram</company>
+        </companies>
+    </album>
+    <album year="1977" type="studio">
+        <title>Bicho</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1978" type="studio">
+        <title>Muito (Dentro da Estrela Azulada)</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1978" type="live">
+        <title>Maria Bethânia e Caetano Veloso ao Vivo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Maria Bethânia</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+            <company>Polygram</company>
+        </companies>
+    </album>
+    <album year="1979" type="studio">
+        <title>Cinema Transcendental</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1981" type="studio">
+        <title>Outras Palavras</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1982" type="studio">
+        <title>Cores, Nomes</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1983" type="studio">
+        <title>Uns</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1984" type="studio">
+        <title>Velô</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1986" type="live">
+        <title>Totalmente Demais</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1987" type="studio">
+        <title>Caetano</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1989" type="studio">
+        <title>Estrangeiro</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1991" type="studio">
+        <title>Circuladô</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1992" type="live">
+        <title>Circuladô Ao Vivo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+            <company>Polygram</company>
+        </companies>
+    </album>
+    <album year="1993" type="studio">
+        <title>Tropicália 2</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1994" type="studio">
+        <title>Fina Estampa</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1995" type="live">
+        <title>Fina Estampa ao Vivo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Polygram</company>
+        </companies>
+    </album>
+    <album year="1997" type="studio">
+        <title>Livro</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="1998" type="live">
+        <title>Prenda Minha</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Polygram</company>
+        </companies>
+    </album>
+    <album year="1999" type="live">
+        <title>Omaggio a Federico e Giulieta ao Vivo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2000" type="studio">
+        <title>Noites do Norte</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="2001" type="live">
+        <title>Noites do Norte Ao Vivo</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2002" type="studio">
+        <title>Eu Não Peço Desculpa</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Jorge Mautner</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="2002" type="live">
+        <title>Live in Bahia</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Nonesuch</company>
+        </companies>
+    </album>
+    <album year="2004" type="studio">
+        <title>A Foreign Sound</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="2006" type="studio">
+        <title>Cê</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="2007" type="live">
+        <title>Multishow Ao Vivo: Cê</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2008" type="live">
+        <title>Roberto Carlos e Caetano Veloso e a música de Tom Jobim</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Roberto Carlos</author>
+        </authors>
+        <companies>
+            <company>Amigo Records</company>
+            <company>Sony Music</company>
+        </companies>
+    </album>
+    <album year="2009" type="studio">
+        <title>Zii e Zie</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="2011" type="live">
+        <title>MTV Ao Vivo: Zii e Zie</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2011" type="live">
+        <title>Multishow Ao Vivo: Caetano e Maria Gadú</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Maria Gadú</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2012" type="studio">
+        <title>Abraçaço</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+    <album year="2012" type="live">
+        <title>Ivete, Gil e Caetano</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+            <author>Ivete Sangalo</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2014" type="live">
+        <title>Multishow Ao Vivo: Abraçaço</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Universal</company>
+        </companies>
+    </album>
+    <album year="2015" type="live">
+        <title>Dois Amigos, Um Século de Música</title>
+        <authors>
+            <author>Caetano Veloso</author>
+            <author>Gilberto Gil</author>
+        </authors>
+        <companies>
+            <company>Sony Music</company>
+        </companies>
+    </album>
+    <album year="2021" type="studio">
+        <title>Meu Coco</title>
+        <authors>
+            <author>Caetano Veloso</author>
+        </authors>
+        <companies>
+            <company>Philips</company>
+        </companies>
+    </album>
+</albums>
