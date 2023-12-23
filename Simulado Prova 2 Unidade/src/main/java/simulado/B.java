@@ -31,8 +31,6 @@ public class B {
 class CaetanoVelosoHandler extends DefaultHandler {
 
     private XMLStreamWriter xsw;
-    int albumCount;
-    String year;
     private Map<String, Integer>  countByYear;
 
     public CaetanoVelosoHandler() throws XMLStreamException, IOException {
@@ -43,13 +41,7 @@ class CaetanoVelosoHandler extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals("album")) {
-            year = attributes.getValue("year");
-        }
-    }
-
-    @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
-        if (qName.equals("album")) {
+            String year = attributes.getValue("year");
             if (countByYear.containsKey(year)) {
                 int count = countByYear.get(year);
                 countByYear.put(year, ++count);
@@ -63,11 +55,9 @@ class CaetanoVelosoHandler extends DefaultHandler {
     public void endDocument() throws SAXException {
         try {
             xsw.writeStartDocument("UTF-8", "1.0");
-
             int maxCount = Collections.max(countByYear.values());
             for (String year : countByYear.keySet()) {
                 int count = countByYear.get(year);
-                
                 if (count == maxCount) {
                     xsw.writeStartElement("year");
                     xsw.writeAttribute("count", Integer.toString(count));
@@ -75,7 +65,6 @@ class CaetanoVelosoHandler extends DefaultHandler {
                     xsw.writeEndElement();
                 }
             }
-
             xsw.writeEndDocument();
             xsw.close();
         } catch (XMLStreamException e) {
