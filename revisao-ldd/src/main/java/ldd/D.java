@@ -2,7 +2,6 @@ package ldd;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.List;
 
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLOutputFactory;
