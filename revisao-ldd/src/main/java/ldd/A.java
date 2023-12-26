@@ -77,6 +77,7 @@ class Copa2018Handler extends DefaultHandler {
             writer.writeAttribute("mandante", mandante);
             writer.writeAttribute("visitante", visitante);
             writer.writeEndDocument();
+            writer.close();
         } catch (XMLStreamException e) {
             e.printStackTrace();
         }
