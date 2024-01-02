@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<copa ano="2018" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Copa.xsd">
+    <fase tipo="grupos">
+        <grupo nome="A">
+            <jogo data="2018-06-14T18:00:00+03:00" mandante="Rússia" visitante="Arábia Saudita">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Gazinsky</jogador>
+                        <minuto>12</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cheryshev</jogador>
+                        <minuto>43</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Dzyuba</jogador>
+                        <minuto>71</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cheryshev</jogador>
+                        <minuto>90+1</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Golovin</jogador>
+                        <minuto>90+4</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-15T17:00:00+05:00" mandante="Egito" visitante="Uruguai">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Giménez</jogador>
+                        <minuto>89</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-19T21:00:00+03:00" mandante="Rússia" visitante="Egito">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Fathy</jogador>
+                        <minuto>47</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cheryshev</jogador>
+                        <minuto>59</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Dzyuba</jogador>
+                        <minuto>62</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Salah</jogador>
+                        <minuto>73</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-20T18:00:00+03:00" mandante="Uruguai" visitante="Arábia Saudita">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Suárez</jogador>
+                        <minuto>23</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-25T18:00:00+04:00" mandante="Uruguai" visitante="Rússia">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Suárez</jogador>
+                        <minuto>10</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Cheryshev</jogador>
+                        <minuto>23</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cavani</jogador>
+                        <minuto>90</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-25T17:00:00+03:00" mandante="Arábia Saudita" visitante="Egito">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Al-Faraj</jogador>
+                        <minuto>45+6</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Salah</jogador>
+                        <minuto>22</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Al-Dawsari</jogador>
+                        <minuto>90+5</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="B">
+            <jogo data="2018-06-15T18:00:00+02:00" mandante="Marrocos" visitante="Irã">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="contra">
+                        <jogador>Bouhaddouz</jogador>
+                        <minuto>90+5</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-15T21:00:00+03:00" mandante="Portugal" visitante="Espanha">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Cristiano Ronaldo</jogador>
+                        <minuto>4</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cristiano Ronaldo</jogador>
+                        <minuto>44</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cristiano Ronaldo</jogador>
+                        <minuto>88</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Diego Costa</jogador>
+                        <minuto>24</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Diego Costa</jogador>
+                        <minuto>55</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Nacho</jogador>
+                        <minuto>58</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-20T15:00:00+03:00" mandante="Portugal" visitante="Marrocos">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Cristiano Ronaldo</jogador>
+                        <minuto>4</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-20T21:00:00+03:00" mandante="Irã" visitante="Espanha">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Diego Costa</jogador>
+                        <minuto>54</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-25T21:00:00+03:00" mandante="Irã" visitante="Portugal">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Quaresma</jogador>
+                        <minuto>45</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Ansarifard</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-25T20:00:00+02:00" mandante="Espanha" visitante="Marrocos">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>En-Nesyri</jogador>
+                        <minuto>81</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Boutaïb</jogador>
+                        <minuto>14</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Isco</jogador>
+                        <minuto>19</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Aspas</jogador>
+                        <minuto>90+1</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="C">
+            <jogo data="2018-06-16T13:00:00+03:00" mandante="França" visitante="Austrália">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Behich</jogador>
+                        <minuto>81</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Griezmann</jogador>
+                        <minuto>58</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Jedinak</jogador>
+                        <minuto>62</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-16T19:00:00+03:00" mandante="Peru" visitante="Dinamarca">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Poulsen</jogador>
+                        <minuto>59</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-21T16:00:00+04:00" mandante="Dinamarca" visitante="Austrália">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Jedinak</jogador>
+                        <minuto>38</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Eriksen</jogador>
+                        <minuto>7</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-21T20:00:00+05:00" mandante="França" visitante="Peru">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mbappé</jogador>
+                        <minuto>34</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-26T17:00:00+03:00" mandante="Dinamarca" visitante="França">
+            </jogo>
+            <jogo data="2018-06-26T17:00:00+03:00" mandante="Austrália" visitante="Peru">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Carillo</jogador>
+                        <minuto>18</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Guerrero</jogador>
+                        <minuto>50</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="D">
+            <jogo data="2018-06-16T16:00:00+03:00" mandante="Argentina" visitante="Islândia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Finnbogason</jogador>
+                        <minuto>23</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Aguero</jogador>
+                        <minuto>19</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-16T21:00:00+02:00" mandante="Croácia" visitante="Nigéria">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Modrić</jogador>
+                        <minuto>23</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Etebo</jogador>
+                        <minuto>32</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-21T21:00:00+03:00" mandante="Argentina" visitante="Croácia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Rebić</jogador>
+                        <minuto>53</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Modrić</jogador>
+                        <minuto>80</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Rakitić</jogador>
+                        <minuto>90+1</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-22T18:00:00+03:00" mandante="Nigéria" visitante="Islândia">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Musa</jogador>
+                        <minuto>49</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Musa</jogador>
+                        <minuto>75</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-26T21:00:00+03:00" mandante="Nigéria" visitante="Argentina">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Moses</jogador>
+                        <minuto>51</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Messi</jogador>
+                        <minuto>14</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Rojo</jogador>
+                        <minuto>86</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-26T21:00:00+03:00" mandante="Islândia" visitante="Croácia">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>G. Sigurðsson</jogador>
+                        <minuto>76</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Badelj</jogador>
+                        <minuto>53</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Perišić</jogador>
+                        <minuto>90</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="E">
+            <jogo data="2018-06-17T16:00:00+04:00" mandante="Costa Rica" visitante="Sérvia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Kolarov</jogador>
+                        <minuto>56</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-17T21:00:00+03:00" mandante="Brasil" visitante="Suíça">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Philippe Coutinho</jogador>
+                        <minuto>20</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Zuber</jogador>
+                        <minuto>50</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-22T15:00:00+03:00" mandante="Brasil" visitante="Costa Rica">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Philippe Coutinho</jogador>
+                        <minuto>90+1</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Neymar</jogador>
+                        <minuto>90+7</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-22T20:00:00+02:00" mandante="Sérvia" visitante="Suíça">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mitrović</jogador>
+                        <minuto>5</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Xhaka</jogador>
+                        <minuto>52</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Shaqiri</jogador>
+                        <minuto>90</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-27T21:00:00+03:00" mandante="Sérvia" visitante="Brasil">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Paulinho</jogador>
+                        <minuto>36</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Thiago Silva</jogador>
+                        <minuto>68</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-27T21:00:00+03:00" mandante="Suíça" visitante="Costa Rica">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Waston</jogador>
+                        <minuto>56</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="contra">
+                        <jogador>Sommer</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Džemaili</jogador>
+                        <minuto>31</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Drmić</jogador>
+                        <minuto>88</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="F">
+            <jogo data="2018-06-17T18:00:00+03:00" mandante="Alemanha" visitante="México">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Lozano</jogador>
+                        <minuto>35</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-18T15:00:00+03:00" mandante="Suécia" visitante="Coréia do Sul">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Granqvist</jogador>
+                        <minuto>65</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-23T18:00:00+03:00" mandante="Coréia do Sul" visitante="México">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Vela</jogador>
+                        <minuto>26</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Hernández</jogador>
+                        <minuto>66</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Son Heung-min</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-23T21:00:00+03:00" mandante="Alemanha" visitante="Suécia">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Reus</jogador>
+                        <minuto>48</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Toivonen</jogador>
+                        <minuto>32</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Kroos</jogador>
+                        <minuto>90+5</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-27T19:00:00+05:00" mandante="México" visitante="Suécia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Augustinsson</jogador>
+                        <minuto>50</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Granqvist</jogador>
+                        <minuto>62</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="contra">
+                        <jogador>Álvarez</jogador>
+                        <minuto>74</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-27T17:00:00+03:00" mandante="Coréia do Sul" visitante="Alemanha">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Kim Young-gwon</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Son Heung-min</jogador>
+                        <minuto>90+6</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="G">
+            <jogo data="2018-06-18T18:00:00+03:00" mandante="Bélgica" visitante="Panamá">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mertens</jogador>
+                        <minuto>47</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Lukaku</jogador>
+                        <minuto>69</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Lukaku</jogador>
+                        <minuto>75</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-18T21:00:00+03:00" mandante="Tunísia" visitante="Inglaterra">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Sassi</jogador>
+                        <minuto>35</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Kane</jogador>
+                        <minuto>11</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Kane</jogador>
+                        <minuto>90+1</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-23T15:00:00+03:00" mandante="Bélgica" visitante="Tunísia">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Hazard</jogador>
+                        <minuto>6</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Hazard</jogador>
+                        <minuto>51</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Lukaku</jogador>
+                        <minuto>16</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Lukaku</jogador>
+                        <minuto>45+3</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Batshuayi</jogador>
+                        <minuto>90</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Bronn</jogador>
+                        <minuto>18</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Khazri</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-24T15:00:00+03:00" mandante="Inglaterra" visitante="Panamá">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Kane</jogador>
+                        <minuto>22</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Kane</jogador>
+                        <minuto>45+1</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Kane</jogador>
+                        <minuto>62</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Stones</jogador>
+                        <minuto>8</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Stones</jogador>
+                        <minuto>40</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Lingard</jogador>
+                        <minuto>36</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Baloy</jogador>
+                        <minuto>78</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-28T20:00:00+02:00" mandante="Inglaterra" visitante="Bélgica">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Januzaj</jogador>
+                        <minuto>51</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-28T21:00:00+03:00" mandante="Panamá" visitante="Tunísia">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Meriah</jogador>
+                        <minuto>33</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>F. Ben Youssef</jogador>
+                        <minuto>51</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Khazri</jogador>
+                        <minuto>66</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="H">
+            <jogo data="2018-06-19T15:00:00+03:00" mandante="Colômbia" visitante="Japão">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Quintero</jogador>
+                        <minuto>39</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Kagawa</jogador>
+                        <minuto>6</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Osako</jogador>
+                        <minuto>73</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-19T18:00:00+03:00" mandante="Polônia" visitante="Senegal">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Krychowiak</jogador>
+                        <minuto>86</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="contra">
+                        <jogador>Cionek</jogador>
+                        <minuto>86</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Niang</jogador>
+                        <minuto>60</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-24T20:00:00+05:00" mandante="Japão" visitante="Senegal">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Inui</jogador>
+                        <minuto>34</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Honda</jogador>
+                        <minuto>78</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Mané</jogador>
+                        <minuto>11</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Wagué</jogador>
+                        <minuto>71</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-24T21:00:00+03:00" mandante="Polônia" visitante="Colômbia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Mina</jogador>
+                        <minuto>40</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Falcão</jogador>
+                        <minuto>70</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Cuadrado</jogador>
+                        <minuto>75</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-28T18:00:00+04:00" mandante="Senegal" visitante="Colômbia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Mina</jogador>
+                        <minuto>74</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-28T18:00:00+04:00" mandante="Japão" visitante="Polônia">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Bednarek</jogador>
+                        <minuto>59</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+    </fase>
+    <fase tipo="finais">
+        <grupo nome="8-final">
+            <jogo data="2018-06-30T17:00:00+03:00" mandante="França" visitante="Argentina">
+                <eventos>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Griezmann</jogador>
+                        <minuto>13</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Pavard</jogador>
+                        <minuto>57</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mbappé</jogador>
+                        <minuto>64</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mbappé</jogador>
+                        <minuto>68</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Di María</jogador>
+                        <minuto>41</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Mercado</jogador>
+                        <minuto>48</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Agüero</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-06-30T21:00:00+03:00" mandante="Uruguai" visitante="Portugal">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cavani</jogador>
+                        <minuto>7</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cavani</jogador>
+                        <minuto>62</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Pepe</jogador>
+                        <minuto>55</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-01T17:00:00+03:00" mandante="Espanha" visitante="Rússia">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Ignashevich</jogador>
+                        <minuto>12</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Dzyuba</jogador>
+                        <minuto>41</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-01T21:00:00+03:00" mandante="Croácia" visitante="Dinamarca">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mandžukić</jogador>
+                        <minuto>4</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>M. Jørgensen</jogador>
+                        <minuto>1</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-02T18:00:00+04:00" mandante="Brasil" visitante="México">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Neymar</jogador>
+                        <minuto>51</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Roberto Firmino</jogador>
+                        <minuto>88</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-02T21:00:00+03:00" mandante="Bélgica" visitante="Japão">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Vertonghen</jogador>
+                        <minuto>69</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Fellaini</jogador>
+                        <minuto>74</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Chadli</jogador>
+                        <minuto>90+4</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Haraguchi</jogador>
+                        <minuto>48</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Inui</jogador>
+                        <minuto>52</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-03T17:00:00+03:00" mandante="Suécia" visitante="Suíça">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Forsberg</jogador>
+                        <minuto>66</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-03T21:00:00+03:00" mandante="Colômbia" visitante="Inglaterra">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mina</jogador>
+                        <minuto>90+3</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante" type="penalti">
+                        <jogador>Kane</jogador>
+                        <minuto>57</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="4-final">
+            <jogo data="2018-07-06T17:00:00+03:00" mandante="Uruguai" visitante="França">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Varane</jogador>
+                        <minuto>40</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Griezmann</jogador>
+                        <minuto>61</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-06T21:00:00+03:00" mandante="Brasil" visitante="Bélgica">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>De Bruyne</jogador>
+                        <minuto>31</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Renato Augusto</jogador>
+                        <minuto>76</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="contra">
+                        <jogador>Fernandinho</jogador>
+                        <minuto>13</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-07T18:00:00+04:00" mandante="Suécia" visitante="Inglaterra">
+                <eventos>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Maguire</jogador>
+                        <minuto>30</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Alli</jogador>
+                        <minuto>59</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-07T21:00:00+03:00" mandante="Rússia" visitante="Croácia">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Cheryshev</jogador>
+                        <minuto>31</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mário Fernandes</jogador>
+                        <minuto>115</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Kramarić</jogador>
+                        <minuto>39</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Vida</jogador>
+                        <minuto>101</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="2-final">
+            <jogo data="2018-07-10T21:00:00+03:00" mandante="França" visitante="Bélgica">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Umtiti</jogador>
+                        <minuto>51</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+            <jogo data="2018-07-11T21:00:00+03:00" mandante="Croácia" visitante="Inglaterra">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Perišić</jogador>
+                        <minuto>68</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mandžukić</jogador>
+                        <minuto>109</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Trippier</jogador>
+                        <minuto>5</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="3-lugar">
+            <jogo data="2018-07-14T17:00:00+03:00" mandante="Bélgica" visitante="Inglaterra">
+                <eventos>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Meunier</jogador>
+                        <minuto>4</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Hazard</jogador>
+                        <minuto>82</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+        <grupo nome="final">
+            <jogo data="2018-07-15T18:00:00+03:00" mandante="França" visitante="Croácia">
+                <eventos>
+                    <evento tipo="gol" time="visitante" type="contra">
+                        <jogador>Mandžukić</jogador>
+                        <minuto>18</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante" type="penalti">
+                        <jogador>Griezmann</jogador>
+                        <minuto>38</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Pogba</jogador>
+                        <minuto>59</minuto>
+                    </evento>
+                    <evento tipo="gol" time="mandante">
+                        <jogador>Mbappé</jogador>
+                        <minuto>65</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Perišić</jogador>
+                        <minuto>28</minuto>
+                    </evento>
+                    <evento tipo="gol" time="visitante">
+                        <jogador>Mandžukić</jogador>
+                        <minuto>69</minuto>
+                    </evento>
+                </eventos>
+            </jogo>
+        </grupo>
+    </fase>
+</copa>

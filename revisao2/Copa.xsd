@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="copa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fase" type="Fase" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="ano" type="xs:gYear" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Fase">
+        <xs:sequence>
+            <xs:element name="grupo" type="Grupo" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="tipo">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="grupos|finais" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Grupo">
+        <xs:sequence>
+            <xs:element name="jogo" type="Jogo" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="nome" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="Jogo">
+        <xs:choice>
+            <xs:element name="eventos" type="Eventos" minOccurs="0"/>
+        </xs:choice>
+        <xs:attribute name="data" type="xs:dateTime" />
+        <xs:attribute name="mandante" type="xs:string" />
+        <xs:attribute name="visitante" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="Eventos">
+        <xs:sequence>
+            <xs:element name="evento" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="jogador" type="xs:string"/>
+                        <xs:element name="minuto" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="tipo" type="xs:string" />
+                    <xs:attribute name="time" type="xs:string" />
+                    <xs:attribute name="type">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="contra|penalti" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
