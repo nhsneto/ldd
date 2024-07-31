@@ -1,5 +1,5 @@
 # SAX, StAX e DOM
-Exercícios utilizando as seguintes tecnologias para análise e manipulação de arquivos xml:
+Exercícios utilizando as seguintes tecnologias para análise e manipulação de dados em arquivos xml:
 - SAX (Simple API for XML),
 - StAX (Streaming API for XML)
-- DOM (Documento Object Model)
+- DOM (Document Object Model)
